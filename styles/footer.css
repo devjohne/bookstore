@@ -33,9 +33,26 @@ hr {
   }
 
   .lista-rodape__link {
+    position: relative;
     text-decoration: none;
     color: var(--cor-texto-quaternario);
     margin-left: 0.5rem;
+    display: block;
+  }
+
+  .lista-rodape__link::after {
+    content: " ";
+    width: 0%;
+    background-color: var(--cor-texto-secundario);
+    height: 2px;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+    top: 25px;
+    left: 1%;
+  }
+
+  .lista-rodape__link:hover::after {
+    width: 100%;
   }
 
   .lista-rodape__titulo {
