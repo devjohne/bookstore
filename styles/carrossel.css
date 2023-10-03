@@ -28,6 +28,11 @@
   margin-bottom: 0.5em;
 }
 
+.card:hover {
+  scale: 1.1;
+  transition: 2s;
+}
+
 .card__botoes {
   display: flex;
   justify-content: space-between;
@@ -73,6 +78,10 @@
   color: var(--cor-texto-principal);
   font-weight: 700;
   text-decoration: none;
+}
+
+.botoes__ancora:active {
+  background-color: var(--cor-texto-ternario);
 }
 
 .descricao__detalhe {

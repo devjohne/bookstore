@@ -29,6 +29,12 @@
   font-weight: 700;
 }
 
+.topicos__link:hover {
+  color: var(--cor-texto-secundario);
+  background-color: var(--cor-fundo);
+  transition: 0.5s;
+}
+
 @media screen and (min-width: 1024px) {
   .topicos__titulo,
   .topicos__link {
